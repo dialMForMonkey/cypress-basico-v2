@@ -6,3 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Cypress tests
+        uses: ./
+        with:
+##          working-directory: examples/v9/basic
+          build: npx cypress info
